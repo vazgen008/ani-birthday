@@ -14,16 +14,14 @@
                 <img src="./img/rings (2).png" class="wedding--rings" alt="">
                 <h1 class="name--artur">{{ $t('title') }}</h1>
                 <h1 class="name--liana">{{ $t('title2') }}</h1>
-                <img src="./img/arsen.png"  alt="">
-                <img src="./img/julia.png"  alt="">
+                
             </div>
             <div class="invitation__info--names" v-else>
                 <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
                  <img src="./img/rings (2).png" class="wedding--rings" alt="">
                 <h1 class="name--artur">{{ $t('title') }}</h1>
                 <h1 class="name--liana">{{ $t('title2') }}</h1>
-                <img src="./img/arsen.png"  alt="">
-                <img src="./img/julia.png"  alt="">
+                
             </div>
             
         </div>
