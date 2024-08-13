@@ -6,7 +6,7 @@
       <img src="./img/qip2.jpg" alt="">
       <img src="./img/qip3.jpg" alt="">
       <img src="./img/qip4.jpg" alt="">
-      <img src="./img/qip10.jpg" alt="">
+      <img src="./img/qper10.jpg" alt="">
       <img src="./img/4ofus.jpg" alt="">
     </div>
     <div class="aniixosqere">
