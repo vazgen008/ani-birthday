@@ -4,7 +4,7 @@
         <p>{{$t('invitationText')}}</p>
     </div>
     <div class="wedding__main--date">
-        <img src="./img/date.png" alt="">
+        <!-- <img src="./img/date.png" alt=""> -->
     </div>
     <div class="wedding__main--party party">
         <img src="https://optim.tildacdn.one/tild3038-3065-4637-b133-336233373764/-/cover/600x600/center/center/-/format/webp/handisutyun2.png" alt="axnax">

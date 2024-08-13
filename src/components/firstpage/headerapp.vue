@@ -10,17 +10,17 @@
                 <h1>{{ $t('title') }}</h1>
             </div>
             <div class="invitation__info--names" v-if="$i18n.locale === 'am'">
-                <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
+                <!-- <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
                 <img src="./img/rings.png" class="wedding--rings" alt="">
                 <img src="./img/arsen.png" class="name--artur" alt="">
-                <img src="./img/julia.png" class="name--liana" alt="">
+                <img src="./img/julia.png" class="name--liana" alt=""> -->
             </div>
             <div class="invitation__info--names" v-else>
                 <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
-                <img src="./img/rings.png" class="wedding--rings" alt="">
+                <!-- <img src="./img/rings.png" class="wedding--rings" alt=""> -->
                 
-                <img src="./img/arsenru.png" class="name--artur" alt="">
-                <img src="./img/julia2ru.png" class="name--liana" alt="">
+                <!-- <img src="./img/arsenru.png" class="name--artur" alt="">
+                <img src="./img/julia2ru.png" class="name--liana" alt=""> -->
             </div>
             <div class="invitation__info--countdown">
                 <h1>{{$t('countdown')}}</h1>
@@ -31,17 +31,12 @@
             </div>
         </div>
         <MainInfo/>
-        <dresscode/>
-        <Footer/>
     </div>
 </template>
 
 
 <script setup>
-import CountDown from './CountDown.vue'
 import MainInfo from './MainInfo.vue'
-import dresscode from './dresscode.vue'
-import Footer from './Footer.vue'
 </script>
 
 
