@@ -4,31 +4,28 @@
     <div class="wedding__invitation">
         <div class="wedding__invitation--info invitation__info">
             <div class="languageAction">
-            <button class="language" @click="$i18n.locale = $i18n.locale === 'am' ? 'ru' : 'am'">{{$i18n.locale}} | {{$i18n.locale == 'am' ? 'ru':'am'}}</button> 
+            <button class="language" @click="$i18n.locale = $i18n.locale === 'am' ? 'en' : 'am'">{{$i18n.locale}} | {{$i18n.locale == 'am' ? 'en':'am'}}</button> 
             </div>
             <div class="invitation__info--header">
                 <h1>{{ $t('title') }}</h1>
             </div>
             <div class="invitation__info--names" v-if="$i18n.locale === 'am'">
-                <!-- <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
-                <img src="./img/rings.png" class="wedding--rings" alt="">
-                <img src="./img/arsen.png" class="name--artur" alt="">
-                <img src="./img/julia.png" class="name--liana" alt=""> -->
+                <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
+                <img src="./img/rings (2).png" class="wedding--rings" alt="">
+                <h1 class="name--artur">{{ $t('title') }}</h1>
+                <h1 class="name--liana">{{ $t('title2') }}</h1>
+                <img src="./img/arsen.png"  alt="">
+                <img src="./img/julia.png"  alt="">
             </div>
             <div class="invitation__info--names" v-else>
                 <img src="https://static.tildacdn.one/tild3132-3965-4765-b164-643561323563/01.svg" class="circle" alt="">
-                <!-- <img src="./img/rings.png" class="wedding--rings" alt=""> -->
-                
-                <!-- <img src="./img/arsenru.png" class="name--artur" alt="">
-                <img src="./img/julia2ru.png" class="name--liana" alt=""> -->
+                 <img src="./img/rings (2).png" class="wedding--rings" alt="">
+                <h1 class="name--artur">{{ $t('title') }}</h1>
+                <h1 class="name--liana">{{ $t('title2') }}</h1>
+                <img src="./img/arsen.png"  alt="">
+                <img src="./img/julia.png"  alt="">
             </div>
-            <div class="invitation__info--countdown">
-                <h1>{{$t('countdown')}}</h1>
-                 <CountDown/>
-                 <a href="#wedding__main">
-                 <img src="https://static.tildacdn.one/tild6432-6432-4261-b335-666136386561/Slaq.svg" alt="">
-                 </a>
-            </div>
+            
         </div>
         <MainInfo/>
     </div>
@@ -80,6 +77,8 @@ import MainInfo from './MainInfo.vue'
         font-weight: 300;
         line-height: 37px;
         text-align: center;
+     color: #9a780b;
+
     &h1{
         padding-left: 320px;
         width: 560px;
@@ -94,14 +93,17 @@ import MainInfo from './MainInfo.vue'
             border-radius: 10px;
             background: none;
             background-position: center center;
-            border-color: #f3ede6;
+            border-color: black;
             border-style: solid;
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
             color: black;
             margin-bottom: 6px;
             margin-left: 120px;
         }
     &--names{
+     color: #9a780b;
+
         padding-top: 20px;
     display: flex;
     align-items: center;
@@ -120,7 +122,7 @@ import MainInfo from './MainInfo.vue'
             // left: 601px;
             margin-right: 50px;
             top: 110px;
-            width: 120px;
+            width: auto;
             zoom: 1.122;
             position: absolute;
             animation: nameanimation 1.6s linear forwards;
